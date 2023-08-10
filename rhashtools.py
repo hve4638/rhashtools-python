@@ -54,7 +54,7 @@ def writehash(filename):
 if __name__ == "__main__":
     showhelp = True
     opparser = getopparser()
-    args = getopparser().parse_args()
+    args = opparser.parse_args()
 
     if args.output:
         fout = open(args.output, "w", encoding="utf-8")
